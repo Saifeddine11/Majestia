@@ -1,0 +1,551 @@
+@import "tailwindcss";
+
+/* Design inputs and documents are not source files. */
+@source not "../../Majestia-13-References";
+@source not "../../docs";
+
+/* ------------------------------------------------------------------
+   Design tokens
+   The five official colours come from the brief. No palette swatch
+   image was supplied, so these values are the single place to correct.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-champagne: #e3cdb3;
+  --color-sand: #d0b898;
+  --color-blue-grey: #b5c2cb;
+  --color-slate-blue: #607680;
+  --color-charcoal: #1f292e;
+
+  /* Shades and tints of the official colours, added for legibility. */
+  --color-slate-deep: #4c6069;
+  --color-ink-muted: #3e4c53;
+  --color-paper: #f4eadd;
+  --color-mist: #e7ecef;
+  --color-cream: #fffdf9;
+
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  --radius-frame: 2.25rem;
+  --radius-panel: 1.75rem;
+  --radius-card: 1.5rem;
+  --radius-field: 1.25rem;
+
+  --shadow-glass: 0 18px 60px rgba(55, 67, 72, 0.16);
+  --shadow-card: 0 12px 40px rgba(55, 67, 72, 0.1);
+  --shadow-lift: 0 24px 70px rgba(31, 41, 46, 0.22);
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Short viewports (small laptops): used to trim the hero. */
+@custom-variant short (@media (max-height: 800px));
+
+:root {
+  --glass-light: rgba(181, 194, 203, 0.48);
+  --glass-warm: rgba(227, 205, 179, 0.54);
+  --glass-dark: rgba(96, 118, 128, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.48);
+
+  /* Opaque tinted fallbacks, used when blur is unsupported or unwanted. */
+  --glass-light-solid: #ccd5db;
+  --glass-warm-solid: #ead9c4;
+  --glass-dark-solid: #485a63;
+
+  --focus-ring: var(--color-charcoal);
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+html {
+  background: var(--color-champagne);
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+/* Page atmosphere: warm champagne and sand against cool blue-grey.
+   A fixed layer, so the palette stays visible where there is no photograph. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(62vw 52vh at 92% 4%, rgba(181, 194, 203, 0.9), transparent 72%),
+    radial-gradient(70vw 60vh at -6% 48%, rgba(208, 184, 152, 0.62), transparent 70%),
+    radial-gradient(58vw 48vh at 104% 96%, rgba(181, 194, 203, 0.6), transparent 72%),
+    linear-gradient(180deg, #ebdcc9 0%, #e3cdb3 58%, #dcc5a8 100%);
+}
+
+::selection {
+  background: rgba(96, 118, 128, 0.32);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.on-dark {
+  --focus-ring: var(--color-cream);
+}
+
+.on-light {
+  --focus-ring: var(--color-charcoal);
+}
+
+button,
+[role="button"],
+summary {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+@layer components {
+  /* ----------------------------------------------------------------
+     Layout
+     ---------------------------------------------------------------- */
+  .container-page {
+    width: 100%;
+    max-width: calc(82.5rem + 2 * var(--gutter));
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  /* ----------------------------------------------------------------
+     Type scale
+     ---------------------------------------------------------------- */
+  .text-display {
+    font-size: clamp(2.375rem, 1.1rem + 5.4vw, 5.25rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    font-weight: 500;
+  }
+
+  .text-heading {
+    font-size: clamp(1.875rem, 1.2rem + 2.9vw, 3.75rem);
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+  }
+
+  .text-subheading {
+    font-size: clamp(1.375rem, 1.1rem + 1.1vw, 2rem);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
+
+  .text-lead {
+    font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+    line-height: 1.6;
+  }
+
+  .eyebrow {
+    font-size: 0.8125rem;
+    line-height: 1.3;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ----------------------------------------------------------------
+     Liquid glass
+     Base rule is the opaque tinted fallback. Transparency and blur are
+     added only where the browser supports them, and removed again for
+     visitors who ask for reduced transparency.
+     ---------------------------------------------------------------- */
+  .glass {
+    position: relative;
+    isolation: isolate;
+    background: var(--glass-solid);
+    border: 1px solid var(--glass-border);
+    box-shadow:
+      var(--glass-shadow, var(--shadow-glass)),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* Internal highlight. */
+  .glass::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.34) 0%,
+      rgba(255, 255, 255, 0.07) 38%,
+      rgba(255, 255, 255, 0) 62%
+    );
+  }
+
+  .glass-light {
+    --glass-tint: var(--glass-light);
+    --glass-solid: var(--glass-light-solid);
+    color: var(--color-charcoal);
+  }
+
+  .glass-warm {
+    --glass-tint: var(--glass-warm);
+    --glass-solid: var(--glass-warm-solid);
+    color: var(--color-charcoal);
+  }
+
+  /* The slate token sits under a charcoal veil so cream text keeps its
+     contrast over bright photography. */
+  .glass-dark {
+    --glass-tint:
+      linear-gradient(180deg, rgba(31, 41, 46, 0.46), rgba(31, 41, 46, 0.56)), var(--glass-dark);
+    --glass-solid: var(--glass-dark-solid);
+    --glass-border: rgba(255, 255, 255, 0.36);
+    --focus-ring: var(--color-cream);
+    color: var(--color-cream);
+  }
+
+  .glass-dark::before {
+    background: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.04) 40%,
+      rgba(255, 255, 255, 0) 62%
+    );
+  }
+
+  /* The header bar once the page has scrolled. It passes over every kind of
+     content, so its tint is denser than the warm glass token. */
+  .glass-bar {
+    --glass-tint: rgba(236, 222, 203, 0.84);
+    --glass-solid: var(--glass-warm-solid);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    color: var(--color-charcoal);
+  }
+
+  /* Tinted glass for sheets and pickers: translucent at the edges, opaque
+     enough to read forms and calendars. */
+  .glass-sheet {
+    --glass-tint: rgba(244, 234, 221, 0.9);
+    --glass-solid: var(--color-paper);
+    --glass-border: rgba(255, 255, 255, 0.7);
+    color: var(--color-charcoal);
+  }
+
+  /* ----------------------------------------------------------------
+     Cool glass: blue-grey surfaces for pages set on a photograph.
+     The tint is a light shade of the blue-grey token, so charcoal text
+     keeps its contrast while the photograph stays visible behind it.
+     ---------------------------------------------------------------- */
+
+  /* Listing cards and other content panels. There can be many on a page,
+     so they take no backdrop blur: the photograph behind them is already
+     soft, and a translucent tint alone reads as frosted glass. */
+  .glass-card {
+    --glass-tint: rgba(214, 223, 229, 0.64);
+    --glass-solid: #d6dfe5;
+    --glass-border: rgba(255, 255, 255, 0.58);
+    --glass-blur: 16px;
+    --glass-saturate: 115%;
+    --glass-shadow: var(--shadow-card);
+    color: var(--color-charcoal);
+  }
+
+  /* Pills, chips and notes: smaller surfaces with a lighter shadow. */
+  .glass-pill {
+    --glass-tint: rgba(228, 234, 238, 0.62);
+    --glass-solid: #dfe6ea;
+    --glass-border: rgba(255, 255, 255, 0.62);
+    --glass-blur: 12px;
+    --glass-saturate: 110%;
+    --glass-shadow: 0 6px 20px rgba(55, 67, 72, 0.08);
+    color: var(--color-charcoal);
+  }
+
+  /* Sheets and dialogs opened from a cool page: opaque enough for forms. */
+  .glass-cool-sheet {
+    --glass-tint: rgba(226, 233, 237, 0.9);
+    --glass-solid: var(--color-mist);
+    --glass-border: rgba(255, 255, 255, 0.7);
+    color: var(--color-charcoal);
+  }
+
+  /* The scrolled header bar over a cool page. */
+  .glass-bar-cool {
+    --glass-tint: rgba(222, 230, 235, 0.84);
+    --glass-solid: var(--glass-light-solid);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    color: var(--color-charcoal);
+  }
+
+  /* The highlight of a glass surface fades in just after the surface itself. */
+  .glass-enter::before {
+    animation: highlight-in 0.7s 0.1s var(--ease-soft) both;
+  }
+
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass {
+      background: var(--glass-tint);
+      -webkit-backdrop-filter: blur(var(--glass-blur, 24px)) saturate(var(--glass-saturate, 125%));
+      backdrop-filter: blur(var(--glass-blur, 24px)) saturate(var(--glass-saturate, 125%));
+    }
+
+    .glass-card {
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    .glass {
+      background: var(--glass-solid);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
+
+  /* Readable tinted surfaces for forms, calendars and prices. Not glass. */
+  .surface-paper {
+    background: var(--color-paper);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: var(--shadow-card);
+  }
+
+  .surface-tint {
+    background: rgba(244, 234, 221, 0.66);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+  }
+
+  /* ----------------------------------------------------------------
+     Section atmospheres
+     ---------------------------------------------------------------- */
+  .atmo-cool {
+    background:
+      radial-gradient(80% 90% at 12% 0%, rgba(231, 236, 239, 0.9), transparent 70%),
+      linear-gradient(160deg, rgba(181, 194, 203, 0.78) 0%, rgba(181, 194, 203, 0.38) 100%);
+  }
+
+  .atmo-dusk {
+    background:
+      radial-gradient(70% 80% at 100% 0%, rgba(181, 194, 203, 0.1), transparent 70%),
+      radial-gradient(60% 70% at 0% 100%, rgba(208, 184, 152, 0.14), transparent 70%),
+      linear-gradient(165deg, #4c6069 0%, #44565e 55%, #37474f 100%);
+    color: var(--color-cream);
+  }
+
+  /* ----------------------------------------------------------------
+     Page backdrop
+     A photograph behind a whole page. `.scene` opens a stacking context
+     so the fixed backdrop sits behind the page content, never behind the
+     body. The image, the colour veil and the content are separate layers:
+     no blur or opacity is ever applied to the content itself.
+     ---------------------------------------------------------------- */
+  .scene {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .scene-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    /* The large viewport, so the layer does not resize as mobile browser bars show and hide. */
+    height: 100vh;
+    height: 100lvh;
+    overflow: hidden;
+    pointer-events: none;
+    /* Seen until the photograph has loaded, and by browsers that cannot show it. */
+    background: var(--color-blue-grey);
+  }
+
+  /* The blur and the reduced saturation are baked into the image file
+     (see public/backgrounds): a runtime filter on a full-screen layer is
+     repainted on every scroll and was too slow. */
+  .scene-backdrop-image {
+    position: absolute;
+    inset: 0;
+  }
+
+  .scene-backdrop-veil {
+    position: absolute;
+    inset: 0;
+    background: rgba(181, 194, 203, 0.55);
+  }
+
+  /* ----------------------------------------------------------------
+     Photography veils
+     ---------------------------------------------------------------- */
+  .veil-hero {
+    background:
+      linear-gradient(180deg, rgba(31, 41, 46, 0.46) 0%, rgba(31, 41, 46, 0) 26%),
+      linear-gradient(
+        90deg,
+        rgba(31, 41, 46, 0.6) 0%,
+        rgba(31, 41, 46, 0.22) 46%,
+        rgba(31, 41, 46, 0) 72%
+      ),
+      linear-gradient(0deg, rgba(76, 96, 105, 0.5) 0%, rgba(76, 96, 105, 0) 40%);
+  }
+
+  @media (max-width: 47.99rem) {
+    .veil-hero {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(31, 41, 46, 0.62) 0%,
+          rgba(31, 41, 46, 0.46) 48%,
+          rgba(31, 41, 46, 0.12) 66%,
+          rgba(31, 41, 46, 0) 76%
+        ),
+        linear-gradient(0deg, rgba(76, 96, 105, 0.62) 0%, rgba(76, 96, 105, 0) 46%);
+    }
+  }
+
+  /* A soft dark cloud behind text set directly on a photograph. It has no
+     edge, so it reads as shade rather than as a panel. */
+  .text-scrim {
+    position: absolute;
+    inset: -2.5rem -2.25rem;
+    z-index: -1;
+    border-radius: 4rem;
+    background: rgba(31, 41, 46, 0.58);
+    filter: blur(2.5rem);
+    pointer-events: none;
+  }
+
+  .veil-card {
+    background: linear-gradient(
+      0deg,
+      rgba(31, 41, 46, 0.78) 0%,
+      rgba(31, 41, 46, 0.3) 42%,
+      rgba(31, 41, 46, 0) 68%
+    );
+  }
+
+  .skeleton {
+    background: linear-gradient(
+      100deg,
+      rgba(208, 184, 152, 0.38) 20%,
+      rgba(244, 234, 221, 0.8) 42%,
+      rgba(208, 184, 152, 0.38) 64%
+    );
+    background-size: 220% 100%;
+    animation: shimmer 1.5s linear infinite;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ----------------------------------------------------------------
+     First-paint hero entrance (CSS, so nothing waits for JavaScript)
+     ---------------------------------------------------------------- */
+  .hero-media-in {
+    animation: hero-media-in 1.1s var(--ease-soft) both;
+  }
+
+  .rise {
+    animation: rise-in var(--rise-duration, 0.75s) var(--ease-soft) both;
+    animation-delay: var(--rise-delay, 0s);
+  }
+
+  .scene-progress {
+    transform-origin: left center;
+    animation: scene-progress var(--scene-duration, 7s) linear both;
+  }
+}
+
+@keyframes hero-media-in {
+  from {
+    opacity: 0;
+    transform: scale(1.035);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes highlight-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scene-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 120% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Reduced motion: content is shown at once, without choreography.
+   Motion for React and GSAP are switched off separately in script.
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .skeleton {
+    animation: none;
+  }
+}

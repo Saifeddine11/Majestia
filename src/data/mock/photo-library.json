@@ -1,0 +1,574 @@
+{
+  "dest-marrakech": {
+    "src": "/demo/dest-marrakech.jpg",
+    "width": 2560,
+    "height": 1708,
+    "alt": "Palais El Badi à Marrakech, ses murs de pisé se reflétant dans un bassin",
+    "credit": {
+      "title": "El Badi Palace, Marrakesh, Morocco, 20250125 0957 7120",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Badi_Palace,_Marrakesh,_Morocco,_20250125_0957_7120.jpg"
+    }
+  },
+  "dest-tanger": {
+    "src": "/demo/dest-tanger.jpg",
+    "width": 2560,
+    "height": 1386,
+    "alt": "Façades blanches de la médina de Tanger au-dessus du port, sous un ciel bleu",
+    "credit": {
+      "title": "Hotel Continental, Tánger, Marruecos, 2015-12-11, DD 25",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Continental,_T%C3%A1nger,_Marruecos,_2015-12-11,_DD_25.JPG"
+    }
+  },
+  "dest-marbella": {
+    "src": "/demo/dest-marbella.jpg",
+    "width": 2560,
+    "height": 1706,
+    "alt": "La Concha rosie par le couchant au-dessus du port de Puerto Banús, près de Marbella",
+    "credit": {
+      "title": "Puerto Banús 2",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puerto_Ban%C3%BAs_2.jpg"
+    }
+  },
+  "dest-phuket": {
+    "src": "/demo/dest-phuket.jpg",
+    "width": 2560,
+    "height": 1706,
+    "alt": "Crique de sable et rochers à Phuket, au crépuscule",
+    "credit": {
+      "title": "Banana beach Phuket 2017 - 06",
+      "author": "This photo was taken by Anton Zelenov.\nPlease credit this with : Photo : Anton Z",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banana_beach_Phuket_2017_-_06.jpg"
+    }
+  },
+  "dest-marrakech-2": {
+    "src": "/demo/dest-marrakech-2.jpg",
+    "width": 1920,
+    "height": 1234,
+    "alt": "Remparts du palais El Badi et bassin, Marrakech",
+    "credit": {
+      "title": "El Badi Palace, Marrakesh, Morocco, 20250125 0957 7117",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Badi_Palace,_Marrakesh,_Morocco,_20250125_0957_7117.jpg"
+    }
+  },
+  "dest-tanger-2": {
+    "src": "/demo/dest-tanger-2.jpg",
+    "width": 1920,
+    "height": 1046,
+    "alt": "Phare du cap Spartel face à l'océan, près de Tanger",
+    "credit": {
+      "title": "Faro del cabo Espartel, Marruecos, 2015-12-11, DD 02",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Faro_del_cabo_Espartel,_Marruecos,_2015-12-11,_DD_02.JPG"
+    }
+  },
+  "dest-marbella-2": {
+    "src": "/demo/dest-marbella-2.jpg",
+    "width": 1920,
+    "height": 1167,
+    "alt": "Quais de Puerto Banús au crépuscule, Marbella",
+    "credit": {
+      "title": "Puerto Banús 1",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puerto_Ban%C3%BAs_1.jpg"
+    }
+  },
+  "dest-phuket-2": {
+    "src": "/demo/dest-phuket-2.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Plage et promontoire boisé à Phuket, lumière du soir",
+    "credit": {
+      "title": "Banana beach Phuket 2017 - 05",
+      "author": "This photo was taken by Anton Zelenov.\nPlease credit this with : Photo : Anton Z",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banana_beach_Phuket_2017_-_05.jpg"
+    }
+  },
+  "riad-serail-1": {
+    "src": "/demo/riad-serail-1.jpg",
+    "width": 1920,
+    "height": 1275,
+    "alt": "Patio d'un riad de Marrakech éclairé de nuit, avec bassin central",
+    "credit": {
+      "title": "Riad Papillon patio at night",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riad_Papillon_patio_at_night.jpg"
+    }
+  },
+  "riad-serail-2": {
+    "src": "/demo/riad-serail-2.jpg",
+    "width": 1920,
+    "height": 1342,
+    "alt": "Chambre d'un riad aux tons sable et turquoise",
+    "credit": {
+      "title": "The Bougainvillea room at riad Papillon",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Bougainvillea_room_at_riad_Papillon.jpg"
+    }
+  },
+  "riad-serail-3": {
+    "src": "/demo/riad-serail-3.jpg",
+    "width": 1920,
+    "height": 1275,
+    "alt": "Salle de bain d'un riad, baignoire en tadelakt et zellige",
+    "credit": {
+      "title": "The spacious ensuite of the Jasmine room at riad Papillon",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_spacious_ensuite_of_the_Jasmine_room_at_riad_Papillon.jpg"
+    }
+  },
+  "riad-serail-4": {
+    "src": "/demo/riad-serail-4.jpg",
+    "width": 1920,
+    "height": 1440,
+    "alt": "Salon d'extérieur sous voilages sur une terrasse de riad",
+    "credit": {
+      "title": "Magical Dar Habiba Marrakech",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magical_Dar_Habiba_Marrakech.JPG"
+    }
+  },
+  "riad-cannelle-1": {
+    "src": "/demo/riad-cannelle-1.jpg",
+    "width": 1920,
+    "height": 1275,
+    "alt": "Patio d'un riad de Marrakech, arcades et bassin",
+    "credit": {
+      "title": "Riad Cinnamon patio",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riad_Cinnamon_patio.jpg"
+    }
+  },
+  "riad-cannelle-2": {
+    "src": "/demo/riad-cannelle-2.jpg",
+    "width": 1920,
+    "height": 1275,
+    "alt": "Suite d'un riad avec cheminée et mezzanine",
+    "credit": {
+      "title": "The luxurious Meknes suite at riad Cinnamon",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_luxurious_Meknes_suite_at_riad_Cinnamon.jpg"
+    }
+  },
+  "riad-cannelle-3": {
+    "src": "/demo/riad-cannelle-3.jpg",
+    "width": 1920,
+    "height": 1275,
+    "alt": "Chambre d'un riad avec lit à baldaquin",
+    "credit": {
+      "title": "The romantic Fez suite at riad Cinnamon",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_romantic_Fez_suite_at_riad_Cinnamon.jpg"
+    }
+  },
+  "riad-cannelle-4": {
+    "src": "/demo/riad-cannelle-4.jpg",
+    "width": 1920,
+    "height": 1275,
+    "alt": "Toit-terrasse d'un riad à la tombée de la nuit, minaret à l'horizon",
+    "credit": {
+      "title": "Riad Cinnamon roof terrace at night",
+      "author": "Marrakechriads",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riad_Cinnamon_roof_terrace_at_night.jpg"
+    }
+  },
+  "dar-emeraude-1": {
+    "src": "/demo/dar-emeraude-1.jpg",
+    "width": 1920,
+    "height": 1282,
+    "alt": "Toit-terrasse d'un riad avec bassin en zellige vert",
+    "credit": {
+      "title": "11 Terrace pool 11",
+      "author": "Dutch Morocco Investments SARL",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:11_Terrace_pool_11.jpg"
+    }
+  },
+  "dar-emeraude-2": {
+    "src": "/demo/dar-emeraude-2.jpg",
+    "width": 1920,
+    "height": 1282,
+    "alt": "Patio arboré d'un riad, de nuit, autour d'une fontaine",
+    "credit": {
+      "title": "03 patio 4 reception night Orig",
+      "author": "Dutch Morocco Investments SARL",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:03_patio_4_reception_night_Orig.jpg"
+    }
+  },
+  "dar-emeraude-3": {
+    "src": "/demo/dar-emeraude-3.jpg",
+    "width": 1920,
+    "height": 1343,
+    "alt": "Galerie de l'étage d'un riad, boiseries et lanternes",
+    "credit": {
+      "title": "04 1st floor 11 night q",
+      "author": "Dutch Morocco Investments SARL",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:04_1st_floor_11_night_q.jpg"
+    }
+  },
+  "dar-emeraude-4": {
+    "src": "/demo/dar-emeraude-4.jpg",
+    "width": 1920,
+    "height": 1282,
+    "alt": "Salon marocain aux murs verts, table dressée",
+    "credit": {
+      "title": "13 Green Restaurant 4",
+      "author": "Dutch Morocco Investments SARL",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:13_Green_Restaurant_4.jpg"
+    }
+  },
+  "maison-detroit-2": {
+    "src": "/demo/maison-detroit-2.jpg",
+    "width": 1920,
+    "height": 1440,
+    "alt": "Véranda à arcades ouvrant sur la baie de Tanger",
+    "credit": {
+      "title": "Hôtel Nord-Pinus Tanger",
+      "author": "Eman Jaradat",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Nord-Pinus_Tanger.jpg"
+    }
+  },
+  "maison-detroit-3": {
+    "src": "/demo/maison-detroit-3.jpg",
+    "width": 1920,
+    "height": 1119,
+    "alt": "Salon de réception d'une demeure historique de Tanger",
+    "credit": {
+      "title": "Museo del Antiguo Legado Estadounidense, Tánger, Marruecos, 2015-12-11, DD 39",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_del_Antiguo_Legado_Estadounidense,_T%C3%A1nger,_Marruecos,_2015-12-11,_DD_39.JPG"
+    }
+  },
+  "maison-detroit-4": {
+    "src": "/demo/maison-detroit-4.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Terrasse à balustrade dominant le port de Tanger",
+    "credit": {
+      "title": "TANGER PORT TAKEN FROM THE TERRACE AT THE HOTEL CONTINENTAL TANGER PORT APRIL 2013 (8695963612)",
+      "author": "calflier001",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TANGER_PORT_TAKEN_FROM_THE_TERRACE_AT_THE_HOTEL_CONTINENTAL_TANGER_PORT_APRIL_2013_(8695963612).jpg"
+    }
+  },
+  "dar-kasbah-1": {
+    "src": "/demo/dar-kasbah-1.jpg",
+    "width": 1920,
+    "height": 1106,
+    "alt": "Bâtisse blanche et palmiers dans la kasbah de Tanger",
+    "credit": {
+      "title": "Kasbah, Tánger, Marruecos, 2015-12-11, DD 27",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kasbah,_T%C3%A1nger,_Marruecos,_2015-12-11,_DD_27.JPG"
+    }
+  },
+  "dar-kasbah-2": {
+    "src": "/demo/dar-kasbah-2.jpg",
+    "width": 1920,
+    "height": 1366,
+    "alt": "Salle à manger d'une demeure historique de Tanger",
+    "credit": {
+      "title": "Museo del Antiguo Legado Estadounidense, Tánger, Marruecos, 2015-12-11, DD 40",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_del_Antiguo_Legado_Estadounidense,_T%C3%A1nger,_Marruecos,_2015-12-11,_DD_40.JPG"
+    }
+  },
+  "dar-kasbah-3": {
+    "src": "/demo/dar-kasbah-3.jpg",
+    "width": 1920,
+    "height": 953,
+    "alt": "Remparts de Tanger illuminés à l'heure bleue",
+    "credit": {
+      "title": "Muralla, Tánger, Marruecos, 2015-12-11, DD 69-71 HDR",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muralla,_T%C3%A1nger,_Marruecos,_2015-12-11,_DD_69-71_HDR.JPG"
+    }
+  },
+  "dar-kasbah-4": {
+    "src": "/demo/dar-kasbah-4.jpg",
+    "width": 1920,
+    "height": 1036,
+    "alt": "Toits de la médina de Tanger en fin de journée",
+    "credit": {
+      "title": "TANGER ROOFTOPS TAKEN FROM THE HOTEL CONTINENTAL TANGER PORT APRIL 2013 (8694838067)",
+      "author": "calflier001",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TANGER_ROOFTOPS_TAKEN_FROM_THE_HOTEL_CONTINENTAL_TANGER_PORT_APRIL_2013_(8694838067).jpg"
+    }
+  },
+  "villa-naranjos-1": {
+    "src": "/demo/villa-naranjos-1.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Villa andalouse et sa piscine, Marbella",
+    "credit": {
+      "title": "Villa in Marbella (16034835552)",
+      "author": "Jörg Weingrill from Potsdam, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villa_in_Marbella_(16034835552).jpg"
+    }
+  },
+  "villa-naranjos-2": {
+    "src": "/demo/villa-naranjos-2.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Façade d'une villa de Marbella côté piscine",
+    "credit": {
+      "title": "Villa in Marbella (16035523855)",
+      "author": "Jörg Weingrill from Potsdam, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villa_in_Marbella_(16035523855).jpg"
+    }
+  },
+  "villa-naranjos-3": {
+    "src": "/demo/villa-naranjos-3.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Terrasse et piscine d'une villa avec vue dégagée, Marbella",
+    "credit": {
+      "title": "Villa in Marbella (16009754956)",
+      "author": "Jörg Weingrill from Potsdam, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villa_in_Marbella_(16009754956).jpg"
+    }
+  },
+  "villa-naranjos-5": {
+    "src": "/demo/villa-naranjos-5.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Terrasse ombragée d'une villa au bord de la piscine",
+    "credit": {
+      "title": "Villa in Marbella (15849477639)",
+      "author": "Jörg Weingrill from Potsdam, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villa_in_Marbella_(15849477639).jpg"
+    }
+  },
+  "casa-plaza-1": {
+    "src": "/demo/casa-plaza-1.jpg",
+    "width": 1920,
+    "height": 1411,
+    "alt": "Maisons blanches autour d'une placette de Marbella",
+    "credit": {
+      "title": "Spain Andalusia Marbella BW 2015-10-28 12-22-40",
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spain_Andalusia_Marbella_BW_2015-10-28_12-22-40.jpg"
+    }
+  },
+  "casa-plaza-2": {
+    "src": "/demo/casa-plaza-2.jpg",
+    "width": 1920,
+    "height": 1377,
+    "alt": "Façades blanchies à la chaux, vieille ville de Marbella",
+    "credit": {
+      "title": "Spain Andalusia Marbella BW 2015-10-28 12-22-18",
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spain_Andalusia_Marbella_BW_2015-10-28_12-22-18.jpg"
+    }
+  },
+  "casa-plaza-3": {
+    "src": "/demo/casa-plaza-3.jpg",
+    "width": 1920,
+    "height": 1440,
+    "alt": "Marina de Puerto Banús au pied de la Concha",
+    "credit": {
+      "title": "La marina de Puerto Banús, cerca de Marbella - Provincia de Málaga, España. - panoramio",
+      "author": "LANOEL",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_marina_de_Puerto_Ban%C3%BAs,_cerca_de_Marbella_-_Provincia_de_M%C3%A1laga,_Espa%C3%B1a._-_panoramio.jpg"
+    }
+  },
+  "villa-laguna-1": {
+    "src": "/demo/villa-laguna-1.jpg",
+    "width": 1920,
+    "height": 1279,
+    "alt": "Vue aérienne d'une villa avec piscine au bord d'une lagune, Phuket",
+    "credit": {
+      "title": "Banyan Tree Phuket Thailand",
+      "author": "BanyanTreeGroup",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banyan_Tree_Phuket_Thailand.jpg"
+    }
+  },
+  "villa-laguna-2": {
+    "src": "/demo/villa-laguna-2.jpg",
+    "width": 1920,
+    "height": 1441,
+    "alt": "Pavillons sur pilotis au bord d'une lagune à l'heure bleue, Phuket",
+    "credit": {
+      "title": "Angsana Laguna Phuket",
+      "author": "Banyantree2014",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angsana_Laguna_Phuket.jpg"
+    }
+  },
+  "villa-laguna-3": {
+    "src": "/demo/villa-laguna-3.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Chambre avec lit à baldaquin ouvrant sur un jardin tropical",
+    "credit": {
+      "title": "Canopy bed of Khan Pool Suite in Amantaka luxury Resort & Hotel in Luang Prabang Laos",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canopy_bed_of_Khan_Pool_Suite_in_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg"
+    }
+  },
+  "villa-laguna-4": {
+    "src": "/demo/villa-laguna-4.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Bassin miroir entre des pavillons au crépuscule, Phuket",
+    "credit": {
+      "title": "JW Marriott Phuket Resort ^ Spa - panoramio (2)",
+      "author": "Mikhail Deynekin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JW_Marriott_Phuket_Resort_%5E_Spa_-_panoramio_(2).jpg"
+    }
+  },
+  "villa-horizon-1": {
+    "src": "/demo/villa-horizon-1.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Piscine à débordement et terrasse en bois face à la mer",
+    "credit": {
+      "title": "Pullman Infinity Pool (7070529735)",
+      "author": "Simon_sees from Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pullman_Infinity_Pool_(7070529735).jpg"
+    }
+  },
+  "villa-horizon-2": {
+    "src": "/demo/villa-horizon-2.jpg",
+    "width": 1920,
+    "height": 1285,
+    "alt": "Long bassin à débordement au milieu de la végétation tropicale",
+    "credit": {
+      "title": "Infinity Pool (1471310973)",
+      "author": "Sean McGrath from Saint John, NB, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Infinity_Pool_(1471310973).jpg"
+    }
+  },
+  "villa-horizon-4": {
+    "src": "/demo/villa-horizon-4.jpg",
+    "width": 1920,
+    "height": 1440,
+    "alt": "Suite lumineuse avec lit à baldaquin",
+    "credit": {
+      "title": "Canopy bed of Amantaka Suite in Amantaka luxury Resort & Hotel in Luang Prabang Laos",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canopy_bed_of_Amantaka_Suite_in_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg"
+    }
+  },
+  "maison-detroit-1": {
+    "src": "/demo/maison-detroit-1.jpg",
+    "width": 1920,
+    "height": 1198,
+    "alt": "Maison blanche adossée aux remparts de Tanger",
+    "credit": {
+      "title": "Muralla, Tánger, Marruecos, 2015-12-11, DD 55",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muralla,_T%C3%A1nger,_Marruecos,_2015-12-11,_DD_55.JPG"
+    }
+  },
+  "villa-naranjos-4": {
+    "src": "/demo/villa-naranjos-4.jpg",
+    "width": 1920,
+    "height": 1280,
+    "alt": "Entrée d'une villa andalouse, olivier et arcades",
+    "credit": {
+      "title": "Villa in Marbella (16033628431)",
+      "author": "Jörg Weingrill from Potsdam, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villa_in_Marbella_(16033628431).jpg"
+    }
+  },
+  "villa-horizon-3": {
+    "src": "/demo/villa-horizon-3.jpg",
+    "width": 1920,
+    "height": 1282,
+    "alt": "Piscine à débordement reflétant le ciel au-dessus de la jungle",
+    "credit": {
+      "title": "Alila Infinity Pool (HDR) (1365818884)",
+      "author": "Sean McGrath from Saint John, NB, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alila_Infinity_Pool_(HDR)_(1365818884).jpg"
+    }
+  }
+}
